@@ -1,6 +1,13 @@
 public class Task {
     public static void main(String[] args){
         String str = null;
-        System.out.print(str.length());
+        try {
+            System.out.print(str.length());
+        }
+        catch (Exception e){
+            System.out.println(e.getMessage());
+            System.out.println(e.getClass());
+            System.out.println("想定外のことが発生しました。ご確認ください");
+        }
     }
 }
